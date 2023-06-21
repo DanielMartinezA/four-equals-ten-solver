@@ -153,7 +153,7 @@ def print_main_menu():
     print("-----------------")
     print("1. Enter a number and generate solutions")
     print("2. Show solutions")
-    print("3. Show solution patterns")
+    print("3. Show parenthesis placement for solutions")
     print("4. Show full operator info")
     print("5. Hint: is + used?")
     print("6. Hint: is - used?")
@@ -225,9 +225,10 @@ def show_answer_list():
 
 
 def show_pattern_info():
-    print("Patterns:\n")
+    print("Parenthesis placement for solutions:\n")
+    print("N represents a digit and # represents an operator.\n")
     for k, v in solution_info["pattern_info"].items():
-        print(f"- The pattern {k} is used in {v} solution{'s' if v != 1 else ''}.")
+        print(f"- The parenthesis pattern {k} is used in {v} solution{'s' if v != 1 else ''}.")
     print()
 
 
